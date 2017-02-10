@@ -21,7 +21,11 @@ if ($result === FALSE) { /* Handle error */ }
 
 include ("testpost.php"); 
 //include("api.php"); 
-echo $_SESSION['urltoken']; 
+echo $_SESSION['urltoken']."<br>"; 
+
+// to use "api.php/".$parameter."?csrf=".$_SESSION['csrf'];
+$parameter = "";
+echo "api.php/".$parameter."?csrf=".$_SESSION['csrf'];
 
 
 ?>
